@@ -6,7 +6,7 @@ O projeto é executado de forma totalmente containerizada via **Docker**, garant
 
 ---
 
-## 🎯 Por que este projeto existe?
+## Por que este projeto existe?
 
 A segurança dos algoritmos de chave pública clássicos (como RSA e ECC) fundamenta-se na dificuldade computacional da fatoração de inteiros e do logaritmo discreto. Com o avanço da computação quântica, o **Algoritmo de Shor** tornará esses esquemas vulneráveis a ataques em tempo polinomial.
 
@@ -16,7 +16,7 @@ Diante do processo de transição tecnológica, surge a questão prática: **qua
 
 ---
 
-## 🔬 Objetivos
+## Objetivos
 
 - **Benchmarking de Latência:** Medir o tempo de execução (em milissegundos) para **Geração de Chaves**, **Encapsulamento/Cifragem** e **Decapsulamento/Decifragem** entre o RSA-3072 e o ML-KEM (níveis de segurança 512, 768 e 1024).
 - **Integração Prática com PQC:** Utilizar as ferramentas da *Open Quantum Safe* (`liboqs` e `liboqs-python`) para demonstrar como chamadas de KEM (*Key Encapsulation Mechanism*) funcionam no nível de código.
@@ -25,7 +25,7 @@ Diante do processo de transição tecnológica, surge a questão prática: **qua
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Linguagem:** Python 3.10+
 - **Criptografia Pós-Quântica:** `liboqs` (Open Quantum Safe C Library) & `liboqs-python`
@@ -35,7 +35,7 @@ Diante do processo de transição tecnológica, surge a questão prática: **qua
 
 ---
 
-## 📊 O que o script mede
+## O que o script mede
 
 O script executa o ciclo completo de troca/estabelecimentos de segredo para cada algoritmo e gera uma tabela explicativa no terminal:
 
@@ -47,7 +47,7 @@ O script executa o ciclo completo de troca/estabelecimentos de segredo para cada
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 - **Docker Engine / Docker Desktop** instalado e em execução.
@@ -72,7 +72,7 @@ O script executa o ciclo completo de troca/estabelecimentos de segredo para cada
 
 ---
 
-## 📋 Exemplo de Saída Esperada
+## Exemplo de Saída Esperada
 
 ```text
 +---------------------+-----------------+------------------+------------------+
@@ -90,7 +90,7 @@ O script executa o ciclo completo de troca/estabelecimentos de segredo para cada
 
 ---
 
-## 📈 Interpretação dos Resultados e Limitações
+## Interpretação dos Resultados e Limitações
 
 - **Velocidade de Processamento:** O ML-KEM demonstra ser significativamente mais rápido que o RSA-3072 na geração de chaves e na operação de decapsulamento/decifragem.
 - **Tamanho dos Artefatos (Overhead de Rede):** Embora mais rápido computacionalmente, os algoritmos pós-quânticos possuem chaves públicas e textos cifrados de tamanho superior aos das curvas elípticas (ECC), o que impacta o consumo de largura de banda e protocolos de rede.
@@ -98,7 +98,7 @@ O script executa o ciclo completo de troca/estabelecimentos de segredo para cada
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```text
 .
@@ -110,7 +110,7 @@ O script executa o ciclo completo de troca/estabelecimentos de segredo para cada
 
 ---
 
-## 📌 Próximos Passos e Melhorias Futuras
+## Próximos Passos e Melhorias Futuras
 
 - [ ] Incluir medições de tamanho (bytes) da chave pública, chave privada e ciphertext.
 - [ ] Adicionar algoritmos de Assinatura Digital Pós-Quântica (ML-DSA / Dilithium e SLH-DSA / SPHINCS+).
@@ -119,7 +119,7 @@ O script executa o ciclo completo de troca/estabelecimentos de segredo para cada
 
 ---
 
-## 📚 Referências
+## Referências
 
 - **NIST FIPS 203:** [Module-Lattice-Based Key-Encapsulation Mechanism Standard](https://csrc.nist.gov/pubs/fips/203/final)
 - **Open Quantum Safe Project:** [openquantumsafe.org](https://openquantumsafe.org/)
@@ -127,6 +127,6 @@ O script executa o ciclo completo de troca/estabelecimentos de segredo para cada
 
 ---
 
-## 📜 Licença
+## Licença
 
 Este projeto é disponibilizado sob a licença [MIT](LICENSE).
